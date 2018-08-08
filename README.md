@@ -1,5 +1,40 @@
 # Grid Map
 
+This is a fork of original grid_map repository with added node of calculation of cost maps.
+
+
+## Node
+
+### [`compute_cmaps`](grid_map_demos/src/compute_costmap.cpp)
+
+#### Parameter
+* `use_normals` (`bool`)
+
+    to integrate normals in total score or not.
+
+
+#### Subscribers
+* `/pose` ([geometry_msgs/PoseStamped])
+
+    Inputs current pose to use as height of drone.
+
+* `/elevation_mapping/elevation_map` ([gridmap_msgs/gridmap])
+
+    Inputs the elevation map generated from elevation mapping node.
+
+#### Publishers
+* `/my_grid_map"` ([gridmap_msgs/gridmap])
+
+    Gridmap with different layers as costmaps.
+
+### Usage
+
+```
+rosrun grid_map_demos compute_maps 
+```
+
+
+
 ## Overview
 
 This is a C++ library with [ROS] interface to manage two-dimensional grid maps with multiple data layers. It is designed for mobile robotic mapping to store data such as elevation, variance, color, friction coefficient, foothold quality, surface normal, traversability etc. It is used in the [Robot-Centric Elevation Mapping](https://github.com/anybotics/elevation_mapping) package designed for rough terrain navigation.
