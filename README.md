@@ -5,7 +5,7 @@ This is a fork of original grid_map repository with added node of calculation of
 
 ## Node
 
-### [`compute_cmaps`](grid_map_demos/src/compute_costmap.cpp)
+### [`compute_maps`](grid_map_demos/src/compute_costmap.cpp)
 
 #### Parameter
 * `use_normals` (`bool`)
