@@ -15,7 +15,7 @@ This is a fork of original grid_map repository with added node of calculation of
 
 #### Subscribers
 * `/pose` ([geometry_msgs/PoseStamped])
-
+ggggggggggg
     Inputs current pose to use as height of drone.
 
 * `/elevation_mapping/elevation_map` ([gridmap_msgs/gridmap])
